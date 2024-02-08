@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice Locations</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .location {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .location-special {
+            background-color: #ffcc00; /* Change this to your desired special color */
+        }
+
+        
+
+        .location:hover {
+            transform: translateY(-5px);
+        }
+
+        .location img {
+            width: 100%;
+            height: auto;
+        }
+
+        .location-info {
+            padding: 20px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            /* Existing CSS properties */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nice Locations</h1>
+    </header>
+
+    <main>
+<section>
+    <h2>Afternoon coffee</h2>
+    <div class="location">
+        <img src="images/miro.jpg" alt="Location 1">
+        <div class="location-info">
+            <h2><a href="https://www.google.com/search?client=firefox-b-d&q=mire+coffee+z%C3%BCrich">Miro coffee Zürich</a></h2>
+            <p>Simple place with good coffee</p>
+        </div>
+    </div>
+
+    <div class="location">
+        <img src="images/kafi-freud.jpg" alt="Location 1">
+        <div class="location-info">
+            <h2><a href="https://kafifreud.ch/">Kafi Freud</a></h2>
+            <p>Hip coffee place</p>
+        </div>
+    </div>
+
+    <div class="location">
+        <img src="images/spheres.jpg" alt="Location 1">
+        <div class="location-info">
+            <h2><a href="https://spheres.cc/">sphères</a></h2>
+            <p>Airy, industrial cafe that doubles as bar & bookstore, offering events, plus coffee, snacks & beers</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Afternoon outdoors</h2>
+    <div class="location">
+        <img src="images/negrelli.jpg" alt="Location 2">
+        <div class="location-info">
+            <h2><a href="https://www.stadt-zuerich.ch/ted/de/index/taz/projekt_galerie/negrellisteg.html">Negrellisteg</a></h2>
+            <p>Cool walk over the rails near mainstation, nice view :)</p>
+        </div>
+    </div>
+
+    <div class="location">
+        <img src="images/kaeferberg.jpg" alt="Location 2">
+        <div class="location-info">
+            <h2><a href="https://en.wikipedia.org/wiki/K%C3%A4ferberg">Käferberg</a></h2>
+            <p>1hour walk from Zürich mainstation, small "mountain" with a very nice view.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Afternoon Museum</h2>
+    <div class="location">
+        <img src="images/pipi.jpg" alt="Location 2">
+        <div class="location-info">
+            <h2><a href="https://www.kunsthaus.ch/">Kunsthaus</a></h2>
+            <p>Famous museum with a variety of exhibitions. Good for a cold or rainy day!</p>
+        </div>
+    </div>
+    <div class="location">
+        <img src="images/pipi.jpg" alt="Location 2">
+        <div class="location-info">
+            <h2><a href="https://www.lowenbraukunst.ch/en/">Löwenbräukunst</a></h2>
+            <p>Smaller museum. Where beer was once brewed, there are now museums, galleries, publishing houses, art and cultural foundations, art escape room and a restaurant under one roof.!</p>
+        </div>
+    </div>
+    <div class="location">
+        <img src="images/toni-areal.jpg" alt="Location 2">
+        <div class="location-info">
+            <h2><a href="https://museum-gestaltung.ch/de/ausstellungen/">Toni Areal</a></h2>
+            <p>University of arts and museum!</p>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <h2>Evening</h2>
+    <div class="location location-special">
+        <img src="images/kasheme.jpg" alt="Location 2">
+        <div class="location-info">
+            <h2><a href="https://kasheme.com/">Kasheme</a></h2>
+            <p>One of my favorite chill bars</p>
+            <p>Only opens 17:00</p>
+        </div>
+    </div>
+
+    <div class="location">
+        <img src="images/gerolds.jpg" alt="Location 2">
+        <div class="location-info">
+            <h2><a href="https://www.fraugerold.ch/home">Gerolds Garten</a></h2>
+            <p>Cool outdoor area with Berlin feeling</p>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <h2>Things to plan in advance</h2>
+    <div class="location">
+        <img src="images/bruno-weber.jpg" alt="Location 2">
+        <div class="location-info">
+            <h2><a href="https://weberpark.ch/">Bruno Weber Park</a></h2>
+            <p>Super artsy outdoor place</p>
+            <p>Opening times:</p>
+            <ul>
+                <li>Wednesday: 11:00 – 18:00</li>
+                <li>Saturday: 11:00 – 18:00</li>
+                <li>Sunday: 11:00 – 18:00</li>
+            </ul>
+            
+        </div>
+    </div>
+
+</section>
+
+<!-- Add more sections for additional locations -->
+
+</main>
+
+        <!-- Existing HTML code -->
+
+        <footer>
+            <p>&copy; 2022 Nice Locations. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+</body>
+</html>

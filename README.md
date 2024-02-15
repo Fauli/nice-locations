@@ -1,5 +1,7 @@
 # Nice Locations
 
+![Logo](.attachements/logo.webp)
+
 ## Introduction 
 
 A simple static site containing some nice locations in Zürich. Created to share some tipps for a nice afternoon.

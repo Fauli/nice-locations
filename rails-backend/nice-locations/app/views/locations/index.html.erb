@@ -1,1 +1,11 @@
-<h1>Hello Locations!</h1>
+<h1>Locations</h1>
+
+<ul>
+  <% @locations.each do |location| %>
+    <li>
+      <h1><%= location.title %></h1>
+      <p><%= location.description %></p>
+      <a href="/locations/<%= location.id %>">Show more information</a>
+    </li>
+  <% end %>
+</ul>

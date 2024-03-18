@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This small application allows users to add a new location to an overview site they can send friends to propose activities for a weekend or nice evening :)
 
 Things you may want to cover:
 

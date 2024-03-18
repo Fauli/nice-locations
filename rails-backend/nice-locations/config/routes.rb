@@ -2,9 +2,7 @@ Rails.application.routes.draw do
   root "locations#index"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  get "/locations", to: "locations#index"
-  get "/locations/:id", to: "locations#show"
-
+  resources :locations
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 

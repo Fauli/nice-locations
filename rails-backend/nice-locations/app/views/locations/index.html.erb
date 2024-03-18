@@ -5,7 +5,9 @@
     <li>
       <h1><%= location.title %></h1>
       <p><%= location.description %></p>
-      <a href="/locations/<%= location.id %>">Show more information</a>
+      <%= link_to location.title, location %>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "New Location", new_location_path %>

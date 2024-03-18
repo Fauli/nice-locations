@@ -1,3 +1,7 @@
 <h1><%= @location.title %></h1>
 
 <p><%= @location.description %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_location_path(@location) %></li>
+</ul>

@@ -18,6 +18,7 @@ defmodule NiceLocationsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/hello", HelloController, :index
   end
 
   # Other scopes may use custom stacks.
